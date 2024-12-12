@@ -214,6 +214,7 @@ resource "aws_elasticache_replication_group" "default" {
   lifecycle {
     ignore_changes = [
       security_group_names,
+      num_node_groups
     ]
   }
 
